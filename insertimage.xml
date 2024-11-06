@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.9" group="content" method="upgrade">
+    <name>plgContentLycheeAlbum</name>
+    <author>Your Name</author>
+    <version>1.0.0</version>
+    <description>Plugin to display Lychee albums in Joomla articles</description>
+    <files>
+        <file plugin="lychee_album">lychee_album.php</file>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB.plg_content_lychee_album.ini</language>
+    </languages>
+</extension>
