@@ -14,7 +14,7 @@ class PlgContentLycheeAlbum extends JPlugin
         }
 
         // Regular expression to match the {lychee_album} tag with parameters (album_id and server)
-        $pattern = '/\{lychee_album\s*(album_id="([^"]+)")?\s*(server="([^"]+)")?\}/';
+        $pattern = '/(?:<p>)?\{lychee_album\s+album_id="([^"]+)"\s+server="([^"]+)"\}(?:<\/p>)?/i';
 
         // Replace {lychee_album} tag with the actual album content
         $article->text = preg_replace_callback($pattern, function($matches) {
